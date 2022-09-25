@@ -24,6 +24,10 @@ function myList() {
             url: "week3/teamwork3.html"
         },
         {
+            label: "Week 3 - Javascript30 - Day 1 Lesson - JS Drum Kit",
+            url: "week3/javascript30/day1/index.html"
+        },
+        {
             label: "Week 3- Notes",
             url: "week3/wk03_notes.html"
         }
