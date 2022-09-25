@@ -20,6 +20,10 @@ function myList() {
             url: "week2/wk02_notes.html"
         },
         {
+            label: "Week 3 - Teamwork Assignment",
+            url: "week3/teamwork3.html"
+        },
+        {
             label: "Week 3- Notes",
             url: "week3/wk03_notes.html"
         }
