@@ -7,3 +7,7 @@ body {
     background-color: lavender;
     padding: 1em;
   }
+
+.listImage {
+    list-style: none;
+  }
