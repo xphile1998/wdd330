@@ -36,6 +36,10 @@ function myList() {
             url: "week3/javascript30/day3/variables.html"
         },
         {
+            label: "Week 3 - JavaScript30 - Day 4 Lesson - Array Cardio Day 1",
+            url: "week3/javascript30/day4/cardio.html"
+        },
+        {
             label: "Week 3- Notes",
             url: "week3/wk03_notes.html"
         }
