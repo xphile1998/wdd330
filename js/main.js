@@ -32,6 +32,10 @@ function myList() {
             url: "week3/javascript30/day2/clock.html"
         },
         {
+            label: "Week 3 - JavaScript30 - Day 3 Lesson - CSS Variables & JS",
+            url: "week3/javascript30/day3/variables.html"
+        },
+        {
             label: "Week 3- Notes",
             url: "week3/wk03_notes.html"
         }
