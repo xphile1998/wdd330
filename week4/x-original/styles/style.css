@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pangolin&family=Comforter&family=Rowdies&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pangolin", cursive;
+    box-sizing: border-box;
+  }
+
+  #banner {
+    background-color: #E15E32;
+  }
+
+  #page {
+    background-color: #c373f9a4;
+}
+  
+  .hide_container {
+    display: none;
+  }
+  
+  .header {
+    text-align: center;
+    margin: 15px 0;
+    font-family: "Pagolin", cursive;
+    font-weight:bolder;
+  }
+  
+  .player_names {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    position: relative;
+}
+  
+  .input_field {
+    border: 2px solid #000;
+    outline: none;
+    padding: 4px 8px;
+    margin: 0 0 10px 4px;
+    font-size: 18px;   
+  }
+  
+  .input_field:focus {
+    border: 2px solid #E15E32;
+  }
+  
+  .submit_btn {
+    border: 2px solid #000;
+    padding: 8px 8px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 32px;
+    font-weight: 900;
+    color: #fff;
+    width: 175px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #ad0505;
+  }
+  
+  .submit_btn:active,
+  .submit_btn:focus {
+    outline: none;
+    border: 2px solid #E15E32;
+  }
+  
+  .submit_btn:hover {
+    background-color: #f79898;
+  }
+  
+  .board_player_turn {
+    text-align: center;
+    margin: 10px 0 10px;
+    height: 54px;
+  }
+  
+  .name_style {
+    font-size: 22px;
+  }
+  
+  .board_container {
+    width: 40%;
+    background-color: #173101;
+    margin: 0 auto;
+    font-size: 0;
+    color:#fff;
+    border: 2px solid #000;
+    -webkit-box-shadow: 3px 3px 3px 0px #000000bf;
+    -moz-box-shadow: 3px 3px 3px 0px #000000bf;
+    box-shadow: 3px 3px 3px 0px #000000bf;
+  }
+  
+  .board_square {
+    width: calc(100% / 3);
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #000;
+    padding: 20px;
+    vertical-align: top;
+    font-family: "Rowdies", serif;
+    font-weight: 900;
+  }
+  
+  .board_cell_winner {
+    background-color: #4e9b30;
+    color: #fff;
+  }
+  
+  .letter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Rowdies", serif;
+    font-size: 48pt;
+    font-weight: 900;
+  }
+  
+  /* WINNER CONTAINER */
+  .reset {
+    text-align: center;
+    margin: 20px auto 0;
+  }
+  
+  .reset_hidden {
+    display: none;
+  }
+  
+  .replay_btn {
+    width: 25%;
+      padding: 10px 20px;
+      border: 2px solid #000;
+      border-radius: 5px;
+      outline: none;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #fff;
+      margin-top: 12px;
+      word-spacing: 3px;
+      background-color: #08528f;
+  }
+
+  .clear_board {
+    font-family: 'Indie Flower', cursive;
+    font-size: 32px;
+    font-weight: 900;
+  }
+  
+  .replay_btn:hover,
+  .replay_btn:active {
+    outline: none;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .congratulations {
+    font-size: 24px;
+  }
+
+  .game_over {
+    font-size: 24px;
+  }
+  
+  .u_r_winner {
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: 2px 0;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .board_square {
+      font-size: 16px;
+      padding: 5px;
+    }
+  
+    .replay_btn {
+      width: 50%;
+    }
+  }
