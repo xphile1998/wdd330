@@ -15,3 +15,10 @@ body {
 .listImage {
     list-style: none;
   }
+
+footer {
+    background-color: #000;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
