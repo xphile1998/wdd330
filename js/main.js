@@ -4,20 +4,24 @@ function myList() {
     // Defining the list of links
     const links = [
         {
+            label: "Week 1 - Notes",
+            url: "week1/wk01_notes.html"
+        },
+        {
             label:  "Week 1 - Doing Stuff",
             url: "week1/story_editor.html"
         },
         {
-            label: "Week 1 - Notes",
-            url: "week1/wk01_notes.html"
+            label: "Week 2 - Notes",
+            url: "week2/wk02_notes.html"
         },
         {
             label: "Week 2 - Team Assignment",
             url: "week2/teamwork2.html"
         },
         {
-            label: "Week 2 - Notes",
-            url: "week2/wk02_notes.html"
+            label: "Week 3 - Notes",
+            url: "week3/wk03_notes.html"
         },
         {
             label: "Week 3 - Teamwork Assignment",
@@ -40,8 +44,12 @@ function myList() {
             url: "week3/javascript30/day4/cardio.html"
         },
         {
-            label: "Week 3- Notes",
-            url: "week3/wk03_notes.html"
+            label: "Week 4 - Notes",
+            url: "week4/wk04_notes.html"
+        },
+        {
+            label: "Week 4 - Team Assignment - Tic Tac Toe",
+            url: "week4/youtube_lesson/index.html"
         }
     ]
 
