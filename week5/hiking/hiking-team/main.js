@@ -1,5 +1,7 @@
 import Hikes from "./hikes.js";
 
+const myHike = new Hikes('hikeListID');
+
 const imgBasePath = "//byui-cit.github.io/cit261/examples/";
 //on load grab the array and insert it into the page
 window.addEventListener("load", () => {
