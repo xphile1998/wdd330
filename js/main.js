@@ -50,6 +50,10 @@ function myList() {
         {
             label: "Week 4 - Team Assignment - Tic Tac Toe",
             url: "week4/youtube_lesson/index.html"
+        },
+        {
+            label: "Week 5 - Notes",
+            url: "week5/wk05_notes.html"
         }
     ]
 
