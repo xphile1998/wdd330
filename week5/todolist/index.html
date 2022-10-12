@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic To Do List</title>
+
+    <link rel="stylesheet" href="todoStyles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>My To Do List</h1>
+    </header>
+
+    <main>
+        <div id="myTodoList">
+            <ul>
+                <li><input type="checkbox" class="checkbox">Write the ToDoList web page for WDD 330</li>
+                <li><input type="checkbox" class="checkbox">Buy groceries for boys</li>
+                <li><input type="checkbox" class="checkbox">Pick up laundry at the cleaners</li>
+                <li><input type="checkbox" class="checkbox">Read my WDD330 Assignment</li>
+                <li><input type="checkbox" class="checkbox">Drop off the car at the mechanic</li>
+                <li><input type="checkbox" class="checkbox">Pass all my classes this semester!</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div id="addTodoItem">
+            <input type="text" id="todoInput" placeholder="I need to...">
+            <button onclick="newTodo()" class="addBtn">Add Task</button>
+        </div>
+        <!-- <p id="author">Coded by Eron Whitefield</p>
+        <p id="className">WDD 330 - Web Frontend Development II - BYUi</p>
+        <p id="copy">&copy; 2022 - Eron Whitefield</p>
+        <p id="disclaim">All images used in this resource are of free use, to the best of my knowledge. If I have used something in error, please inform me.</p> -->
+    </footer>
+
+    <script src="todo.js"></script>
 </body>
 </html>
