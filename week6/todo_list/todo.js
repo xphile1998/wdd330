@@ -1,5 +1,5 @@
-import utilities from "./utilities";
-import ls from "./ls";
+// import utilities from "./utilities.js";
+import ls from "./ls.js";
 
 document.querySelector('#addBtn').onclick = newTodo;
 const todoList = ls.getTodoList();
