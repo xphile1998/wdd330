@@ -67,7 +67,7 @@ function createTodoElement(todo) {
 
 function addToList(todoDiv) {
     // add to the document 
-    document.querySelector('#todos').appendChild(todoDiv);
+    document.querySelector('#tasks').appendChild(todoDiv);
 }
 
 // Event Handlers 
