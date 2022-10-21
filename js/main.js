@@ -58,6 +58,10 @@ function myList() {
         {
             label: "Week 5 - Team Assignment - Great Hikes",
             url: 'week5/hiking/hiking-team/index.html'
+        },
+        {
+            label: "Week 6 - Notes",
+            url: "week6/wk06_notes.html"
         }
     ]
 
