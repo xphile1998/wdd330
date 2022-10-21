@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
-    <title>Todo List App in JavaScript | CodingNepal</title>
+    <title>My Todo List</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Iconscout Link For Icons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="https://kit.fontawesome.com/a5084cfc04.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,8 +19,9 @@
             <ul class="task-box"></ul>
             <div class="controls">
                 <div class="filters">
+                    <span id="count"></span>
                     <span class="active" id="all">All</span>
-                    <span id="pending">Pending</span>
+                    <span id="pending">Active</span>
                     <span id="completed">Completed</span>
                 </div>
                 <button class="clear-btn">Clear All</button>
@@ -33,7 +31,7 @@
 
     <footer>
         <div class="task-input">
-            <img src="bars-staggered-solid.svg" alt="icon" width="20">
+            <i id="task-input-icon" class="fa-solid fa-chart-bar"></i>
             <input type="text" placeholder="Things I need to do...">
         </div>
     </footer>

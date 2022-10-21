@@ -27,7 +27,7 @@ function showTodo(filter) {
                                 <p class="${completed}">${todo.name}</p>
                             </label>
                             <div class="settings">
-                                <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
+                                <i onclick="showMenu(this)" class="fa-solid fa-ellipsis"></i>
                                 <ul class="task-menu">
                                     <li onclick='editTask(${id}, "${todo.name}")'><i class="fa-solid fa-pencil"></i>Edit</li>
                                     <li onclick='deleteTask(${id}, "${filter}")'><i class="fa-solid fa-trash"></i>Delete</li>
@@ -37,6 +37,8 @@ function showTodo(filter) {
             }
         });
     }
+    // let taskCount = 5;
+    // document.getElementById("count").innerHTML = `${taskCount} tasks left`;
     taskBox.innerHTML = liTag || `<span>You don't have any task here</span>`;
     let checkTask = taskBox.querySelectorAll(".task");
     !checkTask.length ? clearAll.classList.remove("active") : clearAll.classList.add("active");
