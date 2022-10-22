@@ -1,8 +1,8 @@
 <!-- 
-    Coded by Eron Whitefield
-    WDD 330 - Web Frontend Development II - BYUi
-    copyright 2022 - Eron Whitefield
-    All images used in this resource are of free use, to the best of my knowledge. If I have used something in error, please inform me.
+*   Coded by Eron Whitefield
+*   WDD 330 - Web Frontend Development II - BYUi
+*   copyright 2022 - Eron Whitefield
+*   All images used in this resource are of free use, to the best of my knowledge. If I have used something in error, please inform me.
 -->
 
 <!DOCTYPE html>
@@ -12,8 +12,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic To Do List</title>
-    <script type="module" src="./todo.js"></script>
     <link rel="stylesheet" href="./todo.css">
+    <script type="module" src="./new-todo.js"></script>
+    
 </head>
 <body>
     <header>
@@ -24,12 +25,12 @@
         <div id="todoList">
             <h2>Task List</h2>
             <ul id="tasks">
-                <!-- <li><input type="checkbox" class="checkbox">Write the ToDoList web page for WDD 330<a class="close"></li>
+                <li><input type="checkbox" class="checkbox">Write the ToDoList web page for WDD 330<p class="close">X</p></li>
                 <li><input type="checkbox" class="checkbox">Buy groceries for boys<p class="close">X</p></li>
                 <li><input type="checkbox" class="checkbox">Pick up laundry at the cleaners<p class="close">X</p></li>
                 <li><input type="checkbox" class="checkbox">Read my WDD330 assignment<p class="close">X</p></li>
                 <li><input type="checkbox" class="checkbox">Drop off the car at the mechanic<p class="close">X</p></li>
-                <li><input type="checkbox" class="checkbox">Pass all my classes this semester!<p class="close">X</p></li> -->
+                <li><input type="checkbox" class="checkbox">Pass all my classes this semester!<p class="close">X</p></li>
             </ul>
         </div>
         <div id="controls">
@@ -39,14 +40,14 @@
                 <span id="pending">Active</span>
                 <span id="completed">Completed</span>
             </div>
-            <button id="clearBtn">Clear All</button>
+            <!-- <button id="clearBtn">Clear All</button> -->
         </div>
     </main>
 
     <footer>
         <form id="addTodoItem">
             <input type="text" id="todoInput" placeholder="Thing that I need to do...">
-            <button onclick="newTodo()" id="addBtn">Add Task</button>
+            <button onclick="newTodo()" id="addBtn">+</button>
         </form>
     </footer>
 

@@ -92,6 +92,8 @@ main {
     background-color: var(--accent1-color);
     border: 1px solid var(--accent2-color);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -200,10 +202,9 @@ div span {
 || #ID Formats                                                          ||
 ||======================================================================||
 */
-#author {
-    font-weight: bold;
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
+div #tasks {
+    display: flex;
+    flex-direction: column;
 }
 
 #todoInput {
@@ -218,6 +219,14 @@ div span {
     font-weight: bolder;
     background: var(--accent2-color);
     color: var(--accent1-color);
+    border-radius: 5px;
+    letter-spacing: 4px;
+}
+
+#addBtn {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 0 5px 0 5px;
     border-radius: 5px;
 }
 

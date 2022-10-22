@@ -1,42 +1,50 @@
-function saveTodo(todo){
-    const toDoList = getTodoList(); 
+/*==========================================================\\
+||                                                          ||
+||  Local Storage Helper                                    ||
+||                                                          ||
+\\==========================================================*/
 
-    toDoList.push(todo); 
-    localStorage.setItem('toDoList', JSON.stringify(toDoList));
-    
-}
+lStorage = (function () {
+    let ls = {};
 
-function crossedOut(completed, content){
-    
-    // const completed = true;
-
-    if (completed == true){
-        var result = content.strike();
-    }
-    return result;
-}
-
-function deleteTodo(id){
-    const toDoList = getTodoList(); 
-    const updatedTodos = toDoList.filter( todo => todo.id != id)
-    localStorage.setItem('toDoList', JSON.stringify(updatedTodos));
-}
-
-function getTodoList(){
-    const todoListString = localStorage.getItem('toDolist'); 
-    let todoList = []; 
-
-    if (todoListString){
-        todoList = JSON.parse(todoListString);
-        console.log("FOR GET LIST: " + todoList);
+    ls.hasData = function (key) {
+        return !!localStorage[key] && localStorage[key].length;
     }
 
-    return todoList;
-}
+    ls.get = function (key) {
+        if (!this.hasData(key)) {
+            return false;
+        }
 
-export default{
-    saveTodo, 
-    getTodoList, 
-    deleteTodo, 
-    crossedOut
-}
+        let data = localStorage[key];
+        try {
+            return JSON.parse(data);
+        } catch (e) {
+            return data;
+        }
+    }
+
+    ls.set = function (key, value) {
+        try {
+            localStorage.setItem(key, JSON.stringify(value));
+        } catch (e) {
+            localStorage.setItem(key, value);
+        }
+    }
+
+    ls.extend = function (key, value) {
+        if (this.hasData(key)) {
+            let _value = this.get(key);
+            $.extend(_value, JSON.parse(JSON.stringify(vaule)));
+            this.set(key, _value);
+        } else {
+            this.set(key, value);
+        }
+    }
+
+    ls.remove = function (key) {
+        localStorage.removeItem(key);
+    }
+
+    return ls;
+}());
