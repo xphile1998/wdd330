@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic To Do List</title>
     <link rel="stylesheet" href="./todo.css">
-    <script type="module" src="./new-todo.js"></script>
+    <script src="./new-todo.js"></script>
     
 </head>
 <body>
@@ -22,32 +22,30 @@
     </header>
 
     <main>
-        <div id="todoList">
+        <div class="container">
             <h2>Task List</h2>
-            <ul id="tasks">
-                <li><input type="checkbox" class="checkbox">Write the ToDoList web page for WDD 330<p class="close">X</p></li>
-                <li><input type="checkbox" class="checkbox">Buy groceries for boys<p class="close">X</p></li>
-                <li><input type="checkbox" class="checkbox">Pick up laundry at the cleaners<p class="close">X</p></li>
-                <li><input type="checkbox" class="checkbox">Read my WDD330 assignment<p class="close">X</p></li>
-                <li><input type="checkbox" class="checkbox">Drop off the car at the mechanic<p class="close">X</p></li>
-                <li><input type="checkbox" class="checkbox">Pass all my classes this semester!<p class="close">X</p></li>
-            </ul>
-        </div>
-        <div id="controls">
-            <span id="count">0 tasks left</span>
-            <div class="filters">
-                <span class="active" id="all">All</span>
-                <span id="pending">Active</span>
-                <span id="completed">Completed</span>
+            <div id="list">
+                <ul id="tasks">
+                    <li><input type="checkbox" class="checkbox">Write the ToDoList web page for WDD 330<p class="close">X</p></li>
+                </ul>
             </div>
-            <!-- <button id="clearBtn">Clear All</button> -->
+            <div id="controls">
+                <span id="count">0 tasks left</span>
+                <div class="filters">
+                    <span class="active" id="all">All</span>
+                    <span id="pending">Active</span>
+                    <span id="completed">Completed</span>
+                </div>
+                <!-- <button id="clearBtn">Clear All</button> -->
+            </div>
         </div>
     </main>
 
     <footer>
-        <form id="addTodoItem">
-            <input type="text" id="todoInput" placeholder="Thing that I need to do...">
-            <button onclick="newTodo()" id="addBtn">+</button>
+        <form>
+            <input type="text" id="input" name="input" placeholder="Thing that I need to do...">
+            <!-- <input type="submit" id="addBtn" value="+" /> -->
+            <button id="addBtn">+</button>
         </form>
     </footer>
 
