@@ -5,11 +5,11 @@ window.addEventListener('load', () => {
 
     const username = localStorage.getItem('username') || '';
 
-    nameInput.value = username;
+    // nameInput.value = username;
 
-    nameInput.addEventListener('change', (e) => {
-        localStorage.setItem('username', e.target.value);
-    })
+    // nameInput.addEventListener('change', (e) => {
+    //     localStorage.setItem('username', e.target.value);
+    // })
 
     newTodoForm.addEventListener('submit', (e) => {
         e.preventDefault();
