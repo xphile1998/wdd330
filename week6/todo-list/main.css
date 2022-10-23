@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
 :root {
-    --primary: #ea40a4;
+    --primary: #c35bf3;
     --business: #3a82eebf;
     --personal: var(--primary);
-    --light: #eee;
+    --light: #eeeeeeb4;
     --gray: #888;
     --white: #fff;
     --dark: #313154;
-    --danger: #ff5b57;
+    --danger: #fd9a05;
 
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
@@ -48,14 +48,18 @@ header h1 {
 
 footer {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 0%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "task button";
+    justify-content: center;
 }
 
-footer section {
-    width: 100%;
-}
+.task {grid-area: task;}
+.button {grid-area: button;}
+
+/* footer section {
+    width: 80%;
+} */
 
 section {
     margin-top: 2rem;
@@ -176,10 +180,9 @@ input:checked ~ .bubble::after {
 }
 
 .create-todo input[type="submit"] {
-    display: block;
-    width: 100%;
-    font-size: 1.125rem;
-    padding: 1rem 1.5rem;
+    width: 20%;
+    font-size: 2rem;
+    padding: 1rem 1rem;
     color: var(--white);
     background-color: var(--primary);
     border-radius: 0.5rem;

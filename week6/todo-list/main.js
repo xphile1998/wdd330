@@ -1,9 +1,9 @@
 window.addEventListener('load', () => {
     todos = JSON.parse(localStorage.getItem('todos')) || [];
-    const nameInput = document.querySelector('#name');
+    // const nameInput = document.querySelector('#name');
     const newTodoForm = document.querySelector('#new-todo-form');
 
-    const username = localStorage.getItem('username') || '';
+    // const username = localStorage.getItem('username') || '';
 
     // nameInput.value = username;
 
@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
 
         const todo = {
             content: e.target.elements.content.value,
-            category: e.target.elements.category.value,
+            category: 'personal',
             done: false,
             createdAt: new Date().getTime()
         }
