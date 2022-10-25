@@ -66,6 +66,14 @@ function myList() {
         {
             label: "Week 6 - ToDo List Assignment",
             url: "week6/todo-list/index.html"
+        },
+        {
+            label: "Week 7 - Notes",
+            url: "week7/w07_notes.html"
+        },
+        {
+            label: "Week 7 - Team Activity",
+            url: "week7/team_activity/hiking-complete.html"
         }
     ]
 
