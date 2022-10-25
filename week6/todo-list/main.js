@@ -26,6 +26,7 @@ window.addEventListener('load', () => {
         localStorage.setItem('todos', JSON.stringify(todos));
 
         e.target.reset();
+        DisplayTodos();
     })
 
     DisplayTodos();
