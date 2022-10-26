@@ -59,3 +59,20 @@ img {
 #comments {
     padding: 1rem;
 }
+
+.addComment>h2 {
+    text-align: center;
+    background-color: indianred;
+}
+
+.addComment input {
+    width: 100%;
+    border: 1px solid black;
+    font-size: 1.25rem;
+}
+
+.addComment button {
+    padding: 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+}

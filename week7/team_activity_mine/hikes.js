@@ -45,7 +45,7 @@ export default class Hikes {
     this.parentElement = document.getElementById(elementId);
     // we need a back button to return back to the list. This will build it and hide it. When we need it we just need to remove the 'hidden' class
     this.backButton = this.buildBackButton();
-
+    this.comments = new Comments('hikes', 'comments');
   }
   // why is this function necessary?  hikeList is not exported, and so it cannot be seen outside of this module. I added this in case I ever need the list of hikes outside of the module. This also sets me up nicely if my data were to move. I can just change this method to the new source and everything will still work if I only access the data through this getter.
   getAllHikes() {
@@ -63,7 +63,7 @@ export default class Hikes {
     this.addHikeListener();
     // make sure the back button is hidden
     this.backButton.classList.add('hidden');
-  
+    this.comments.showCommentList();
   }
   // show one hike with full details in the parentElement
   showOneHike(hikeName) {
@@ -72,8 +72,8 @@ export default class Hikes {
     this.parentElement.appendChild(renderOneHikeFull(hike));
     // show the back button
     this.backButton.classList.remove('hidden');
+    this.comments.showCommentList(hikeName);
   
-
   }
   // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that. I changed "touchend" to "click" to work on my laptop and PC. Need to change back before final save.
   addHikeListener() {

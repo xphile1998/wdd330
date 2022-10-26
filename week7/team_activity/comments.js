@@ -1,10 +1,10 @@
 // commentModel code
 
 
-// getComments code
+    // getComments code
 
 
-// addComment code
+    // addComment code
 
 
 // writeComments to LS code
@@ -16,8 +16,10 @@
 // Create the Comments class
 
 
-// addSubmitListener
+    // addSubmitListener
 
 
-// showCommentList
+    // showCommentList
 
+
+export default Comments;
