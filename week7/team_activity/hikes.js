@@ -59,6 +59,7 @@ export default class Hikes {
     // notice that we use our getter above to grab the list instead of getting it directly...this makes it easier on us if our data source changes...
     renderHikeList(this.parentElement, this.getAllHikes());
     this.addHikeListener();
+    renderCommentList();
     // make sure the back button is hidden
     this.backButton.classList.add('hidden');
   }

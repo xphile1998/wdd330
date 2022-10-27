@@ -1,11 +1,19 @@
 // commentModel code
 class commentModel {
     // Build the constructor
-
+    constructor (hikeName, comment) {
+        this.name = hikeName;
+        this.date = new Date();
+        this.content = comment;
+      }
     // getComments code
-
+    getComments() {
+        return this.comment;
+    }
     // addComment code
-
+    addComments(comment) {
+        this.content = comment;
+    }
 }
 
 // writeComments to LS code
