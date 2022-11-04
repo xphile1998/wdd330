@@ -74,6 +74,14 @@ function myList() {
         {
             label: "Week 7 - Team Activity",
             url: "week7/team_activity_mine/hiking-complete.html"
+        },
+        {
+            label: "Week 8 - Notes",
+            url: "week8/wk08_notes.html"
+        },
+        {
+            label: "Week 8 - Team Activity",
+            url: "week8/team_activity/index.html"
         }
     ]
 
