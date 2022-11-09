@@ -82,6 +82,10 @@ function myList() {
         {
             label: "Week 8 - Team Activity",
             url: "week8/team_activity/index.html"
+        },
+        {
+            label: "Week 9 - Notes",
+            url:"week9/wk09_notes.html"
         }
     ]
 
