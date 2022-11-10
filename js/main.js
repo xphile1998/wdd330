@@ -86,6 +86,14 @@ function myList() {
         {
             label: "Week 9 - Notes",
             url:"week9/wk09_notes.html"
+        },
+        {
+            label: "Week 9 - Parcel Folder Download & Installation",
+            url: "week9/parcel"
+        },
+        {
+            label: "Week 9 - Team Activity",
+            url: "week9/team-activity/index-FINISHED.html"
         }
     ]
 

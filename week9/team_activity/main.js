@@ -1,4 +1,4 @@
-let counts = {"65":0, "83":0, "68":0, "70":0, "71":0, "72":0, "74":0, "75":0, "76":0};
+let counts = { "65": 0, "83": 0, "68": 0, "70": 0, "71": 0, "72": 0, "74": 0, "75": 0, "76": 0 };
 
 function playSound(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -6,12 +6,12 @@ function playSound(e) {
     if (!audio) return; // Stop the function from running if there is no audio
     audio.currentTime = 0; //rewind to the beginning of the sound file
     audio.play();
-   
+
     if (counts[e.keyCode] < 100) {
-    counts[e.keyCode] += 10;
+        counts[e.keyCode] += 10;
     } else {
         counts[e.keyCode] = 0;
-    }   
+    }
 
     console.table(counts);
 
