@@ -57,28 +57,7 @@
     <audio data-key="75" src="sounds/tom.wav"></audio>
     <audio data-key="76" src="sounds/tink.wav"></audio>
 
-    <script>
-        function playSound(e) {
-            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-            if (!audio) return; // Stop the function from running if there is no audio
-            audio.currentTime = 0; //rewind to the beginning of the sound file
-            audio.play();
-            console.dir(Audio);
-            key.classList.add("playing");
-        }
-
-        function removeTransition(e) {
-            if (e.propertyName !== 'transform') return; // skips the function if it's not a transform
-            this.classList.remove("playing");
-        }
-
-        // const keys = document.querySelectorAll('.key');
-        const keys = Array.from(document.querySelectorAll('.key'));
-        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-        window.addEventListener('keydown', playSound);
-    </script>
-
+    <script src="main.js"></script>
 
 </body>
 
