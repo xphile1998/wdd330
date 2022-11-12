@@ -1,0 +1,82 @@
+{"songs": [
+    {
+        "title": "Too Much Time On My Hands",
+        "artist": "Styx",
+        "album": "Paradise Theater",
+        "release": 1981,
+        "runtime": "4:31 minutes",
+        "highest_chart": 9,
+        "song_url": "/audio/Styx_ParadiseTheater_TooMuchTimeOnMyHands.mp3",
+        "pic_url": "/images/covers/Styx_ParadiseTheater.webp"
+    },
+    {
+        "title": "Heat of the Moment",
+        "artist": "Asia",
+        "album": "Asia",
+        "release": 1982,
+        "runtime": "3:50 minutes",
+        "highest_chart": 4,
+        "song_url": "/audio/Asia_Asia_HeatOfTheMoment.mp3",
+        "pic_url": "/images/covers/Asia_Asia.webp"
+    },
+    {
+        "title": "More Then A Feeling",
+        "artist": "Boston",
+        "album": "Boston",
+        "release": 1976,
+        "runtime": "4:45 minutes",
+        "highest_chart": 5,
+        "song_url": "/audio/Boston_Boston_MoreThanAFeeling.mp3",
+        "pic_url": "/images/covers/Boston_Boston.webp"
+    },
+    {
+        "title": "Amanda",
+        "artist": "Boston",
+        "album": "Third Stage",
+        "release": 1986,
+        "runtime": "4:16 minutes",
+        "highest_chart": 1,
+        "song_url": "/audio/Boston_ThirdStage_Amanda.mp3",
+        "pic_url": "/images/covers/Boston_ThirdStage.webp"
+    },
+    {
+        "title": "This is Halloween",
+        "artist": "Danny Elfman",
+        "album": "The Nightmare Before Christmas Soundtrack",
+        "release": 1993,
+        "runtime": "3:16 minutes",
+        "highest_chart": "N/A",
+        "song_url": "/audio/DannyElfman_NightmareBeforeChristmas_ThisIsHalloween.mp3",
+        "pic_url": "/images/covers/DannyElfman_NightmareBeforeChristmas.webp"
+    },
+    {
+        "title": "Where Are You Christmas?",
+        "artist": "Faith Hill",
+        "album": "How The Grinch Stole Christmas Soundtrack",
+        "release": 2000,
+        "runtime": "4:07 minutes",
+        "highest_chart": 65,
+        "song_url": "/audio/FaithHill_GrinchSoundtrack_WhereAreYouChristmas.mp3",
+        "pic_url": "/images/covers/HowTheGrinchStoleChristmasSoundtrack.webp"
+    },
+    {
+        "title": "Heartbreaker",
+        "artist": "Pat Benatar",
+        "album": "In The Heat of the Night",
+        "release": 1979,
+        "runtime": "3:29 minutes",
+        "highest_chart": 23,
+        "song_url": "/audio/PatBenatar_InTheHeatOfTheNight_Heartbreaker.mp3",
+        "pic_url": "/images/covers/PatBenatar_InTheHeatOfTheNight.webp"
+    },
+    {
+        "title": "The Power Of Love",
+        "artist": "Huey Lewis and the News",
+        "album": "Back To The Future Soundtrack",
+        "release": 1985,
+        "runtime": "3:53 minutes",
+        "highest_chart": 1,
+        "song_url": "/audio/HueyLewis_BackToTheFuture_ThePowerOfLove.mp3",
+        "pic_url": "/images/covers/BackToTheFutureSoundtrack.webp"
+    }
+]}
