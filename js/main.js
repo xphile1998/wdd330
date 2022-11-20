@@ -98,6 +98,10 @@ function myList() {
         {
             label: "Week 10 - Notes",
             url: "week10/wk10_notes.html"
+        },
+        {
+            label: "Week 10 - Quake",
+            url: "week10/quake.html"
         }
     ]
 
