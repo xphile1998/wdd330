@@ -102,6 +102,10 @@ function myList() {
         {
             label: "Week 10 - Quake",
             url: "week10/team_activity/quakes.html"
+        },
+        {
+            label: "Week 11 - Notes",
+            url: "week11/wk11_notes.html"
         }
     ]
 
