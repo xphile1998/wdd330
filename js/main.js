@@ -106,6 +106,10 @@ function myList() {
         {
             label: "Week 11 - Notes",
             url: "week11/wk11_notes.html"
+        },
+        {
+            label: "Week 11 - Authentication",
+            url: "week11/client/client.html"
         }
     ]
 
