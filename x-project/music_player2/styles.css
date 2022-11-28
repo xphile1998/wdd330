@@ -18,8 +18,8 @@ body {
     margin: 0;
 }
 
-.music-container {    padding: 10px 10px 10px 150px;
-
+.music-container {    
+    padding: 10px 10px 10px 150px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 20px 20px 0 rgba(251, 216, 37, 0.6);
