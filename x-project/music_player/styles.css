@@ -135,11 +135,13 @@ div.albumTags {
 }
 
 div.albumTags>p {
-  margin: 0;
+  margin: 1px;
 }
 
 div.albumInfo>p {
   margin: 0;
+  background-color: var(--secondary-color);
+  width: fit-content;
 }
 
 
@@ -152,16 +154,25 @@ div.coverArt img {
 }
 
 .buttons {
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: 3rem;
+  /* border: none; */
+  /* min-width: 75px; */
 }
 
 .tag {
   text-align: right;
-  font-family: Audiowide, sans-serif;
+  /* font-family: Audiowide, sans-serif; */
   font-weight: 600;
+}
+
+.data {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  /* margin: 1px; */
 }
 
 .headImg {
@@ -173,6 +184,15 @@ div.coverArt img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#previous {
+  border-radius: 20px 0 0 20px;
+  
+}
+
+#next {
+  border-radius: 0 20px 20px 0;
 }
 
 /*==========================================\\
