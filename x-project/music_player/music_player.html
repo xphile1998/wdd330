@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,59 @@
     <title>EWhitefield Music Player</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="headImg">
+            <img src="images/music_logo_300.png" alt="Music Player Logo" id="imgHeading">
+        </div>
+        <div class="heading">
+            <h1 id="title">My Music Player</h1>
+            <h2 id="subtitle">By Eron Whitefield</h2>
+            <h3 id="course">WDD 330 Fall 2022</h3>
+        </div>
+    </header>
+    <main>
+        <hr>
+        <div class="wrapper">
+            <div class="coverArt">
+                <img src="images/music_logo_300.png" alt="Album Artwork" id="albumCover">
+            </div>
+            <div class="albumTags">
+                <p class="tag">Artist: </p>
+                <p class="tag">Track Title: </p>
+                <p class="tag">Album: </p>
+                <p class="tag">Year Released: </p>
+                <p class="tag">Track Runtime: </p>
+                <p class="tag">Highest Chart Appearance: </p>
+            </div>
+            <div class="albumInfo">
+                <p class="data" id="artist">Data</p>
+                <p class="data" id="trackName">Data</p>
+                <p class="data" id="albumName">Data</p>
+                <p class="data" id="year">Data</p>
+                <p class="data" id="runtime">Data</p>
+                <p class="data" id="chart">Highest Chart Appearance: </p>
+            </div>
+        </div>
+        <hr>
+        <div class="buttons">
+            <button id="previous"><i class="fa fa-fast-backward"></i> Previous Song</button>
+            <button id="replay"><i class="fa fa-backward"></i> Replay</button>
+            <button id="play">Play <i class="fa fa-play"></i></button>
+            <button id="pause">Pause <i class="fa fa-pause"></i></button>
+            <button id="next">Next Song <i class="fa fa-fast-forward"></i></button>
+        </div>
+
+    </main>
+    <footer>
+        <hr>
+        <p class="author">Eron Whitefield</p>
+        <p class="copyright">| &copy; 2022 | WDD330 |</p>
+    </footer>
     <script src="music_player.js"></script>
 </body>
+
 </html>
