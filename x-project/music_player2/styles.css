@@ -37,7 +37,7 @@ body {
 
 .img-container::after {
     content: '';
-    background-color: white;
+    background-color: silver;
     border-radius: 50%;
     border: 1px solid black;
     position: absolute;

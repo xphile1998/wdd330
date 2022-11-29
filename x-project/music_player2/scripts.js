@@ -15,7 +15,7 @@ const durTime = document.querySelector('#durTime');
 const songs = ['Asia_Asia_HeatOfTheMoment', 'Boston_Boston_MoreThanAFeeling', 'Boston_ThirdStage_Amanda', 'DannyElfman_NightmareBeforeChristmas_ThisIsHalloween', 'FaithHill_GrinchSoundtrack_WhereAreYouChristmas', 'HueyLewis_BackToTheFuture_ThePowerOfLove', 'PatBenatar_InTheHeatOfTheNight_Heartbreaker', 'Styx_ParadiseTheater_TooMuchTimeOnMyHands'];
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
