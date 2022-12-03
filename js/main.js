@@ -110,6 +110,14 @@ function myList() {
         {
             label: "Week 11 - Authentication",
             url: "week11/client/client.html"
+        },
+        {
+            label: "Week 12 - Notes",
+            url: "week12/wk12_notes.html"
+        },
+        {
+            label: "Final Project - Music Player",
+            url: "x-project/music_player/music_player.html"
         }
     ]
 

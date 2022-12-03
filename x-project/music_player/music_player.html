@@ -8,9 +8,10 @@
     <title>EWhitefield Music Player</title>
 
     <link rel="stylesheet" href="styles.css">
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
@@ -30,13 +31,13 @@
             <div class="coverArt">
                 <img src="images/covers/Asia_Asia.webp" alt="Album Artwork" id="albumCover">
             </div>
-            
+
             <!-- <div class="progress-container" id="progress-container">
                 <div class="progress" id="progress"></div>
             </div> -->
 
             <audio src="audio/Asia_Asia_HeatOfTheMoment.mp3" id="audio"></audio>
-            
+
             <div class="albumTags">
                 <p class="tag">Artist: </p>
                 <p class="tag">Track Title: </p>
@@ -45,7 +46,7 @@
                 <p class="tag">Track Runtime: </p>
                 <p class="tag">Highest Chart Appearance: </p>
             </div>
-            
+
             <div class="albumInfo">
                 <p class="data" id="artist">Data</p>
                 <p class="data" id="title">Data</p>
@@ -55,11 +56,17 @@
                 <p class="data" id="chart">Data</p>
             </div>
         </div>
-        
+
         <div class="buttons">
-            <button id="prev" class="action-btn"><i class="fas fa-fast-backward"></i></button>
-            <button id="play" class="action-btn action-btn-big"><i class="fas fa-play"></i></button>
-            <button id="next" class="action-btn"><i class="fas fa-fast-forward"></i></button>
+            <button id="prev" class="action-btn"><i class="fas fa-fast-backward">
+                    <span class="blank">Previous</span>
+                </i></button>
+            <button id="play" class="action-btn action-btn-big"><i class="fas fa-play">
+                    <span class="blank">Play</span>
+                </i></button>
+            <button id="next" class="action-btn"><i class="fas fa-fast-forward"></i>
+                <span class="blank">Next</span>
+            </button>
         </div>
 
     </main>
@@ -68,7 +75,7 @@
         <p class="author">Eron Whitefield</p>
         <p class="copyright">| &copy; 2022 | WDD330 |</p>
     </footer>
-    
+
     <script src="music_player.js"></script>
 </body>
 
