@@ -162,6 +162,13 @@ div.coverArt img {
   border-radius: 50%;
   margin: 0 20px 0 10px;
   border: 5px solid var(--primary-color);
+  animation: rotate 3s linear infinite;
+
+  animation-play-state: paused;
+}
+
+.wrapper.play .coverArt img {
+  animation-play-state: running;
 }
 
 .coverArt {
@@ -263,3 +270,48 @@ div.coverArt img {
 ||  Speciality Styles                       ||
 ||                                          ||
 \\==========================================*/
+
+/* 
+.viewport {
+  position:relative;
+  width:640px;
+  height:480px;
+  border:1px dashed #000;
+}
+.record {
+  border-radius: 50%;          
+  position:absolute;
+  top:50px;
+  right: 15px;
+  width:300px;
+  height:300px;
+  border:1px solid #333;
+  -webkit-animation: rotatethis 5s linear 0s infinite;
+  animation: rotatethis 5s linear 0s infinite;
+}
+
+.record img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+@keyframes rotatethis {
+  0% { transform: rotate(0deg);   }
+100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes rotatethis {
+  0% { -webkit-transform: rotate(0deg);   }
+100% { -webkit-transform: rotate(360deg); }
+}
+
+*/
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
