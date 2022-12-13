@@ -121,6 +121,8 @@ function myList() {
         }
     ]
 
+    // Need to update this?
+
     links.forEach(v => {
         let li = document.createElement("li");
 
