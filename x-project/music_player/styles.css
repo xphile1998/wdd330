@@ -182,8 +182,8 @@ div.coverArt img {
   border-radius: 50%;
   border: 1px solid black;
   position: absolute;
-  bottom: 50%;
-  left: 50%;
+  bottom: 50.25%;
+  left: 48.75%;
   width: 10px;
   height: 10px;
   transform: translate(-50%, 50%);
@@ -238,6 +238,10 @@ div.coverArt img {
   display: none;
 }
 
+.albumInfo {
+  width: 40%;
+}
+
 /*==========================================\\
 ||                                          ||
 ||  ID Styles                               ||
@@ -260,9 +264,20 @@ div.coverArt img {
 
 /*==========================================\\
 ||                                          ||
-||  Pseudo Class Styles                     ||
+||  Favorites Class Styles                  ||
 ||                                          ||
 \\==========================================*/
+.like__btn {
+  padding: 10px 15px;
+  background: var(--secondary-color);
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  color: var(--accent3-color);
+  outline: none;
+  border: 1px solid var(--accent2-color);
+  cursor: pointer;
+}
 
 
 /*==========================================\\
@@ -270,48 +285,12 @@ div.coverArt img {
 ||  Speciality Styles                       ||
 ||                                          ||
 \\==========================================*/
-
-/* 
-.viewport {
-  position:relative;
-  width:640px;
-  height:480px;
-  border:1px dashed #000;
-}
-.record {
-  border-radius: 50%;          
-  position:absolute;
-  top:50px;
-  right: 15px;
-  width:300px;
-  height:300px;
-  border:1px solid #333;
-  -webkit-animation: rotatethis 5s linear 0s infinite;
-  animation: rotatethis 5s linear 0s infinite;
-}
-
-.record img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-@keyframes rotatethis {
-  0% { transform: rotate(0deg);   }
-100% { transform: rotate(360deg); }
-}
-@-webkit-keyframes rotatethis {
-  0% { -webkit-transform: rotate(0deg);   }
-100% { -webkit-transform: rotate(360deg); }
-}
-
-*/
-
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

@@ -99,7 +99,7 @@ function displaySongs(songList, songIndex) {
     playBtn.querySelector('i.fas').classList.remove('fa-pause');
 
     console.log(songList[songIndex]);
-    
+
     artist.innerText = songList[songIndex].artist;
     title.innerText = songList[songIndex].title;
     albumName.innerText = songList[songIndex].album;
@@ -110,3 +110,28 @@ function displaySongs(songList, songIndex) {
     cover.src = `images/covers/${songList[songIndex].pic_url}`;
     audio.src = `audio/${songList[songIndex].song_url}`;
 }
+
+/*======================================\\
+||                                      ||
+||  Like Button Stuff                   ||
+||                                      ||
+\\======================================*/
+const likeBtn = document.querySelector(".like__btn");
+let likeIcon = document.querySelector("#icon");
+// let count = document.querySelector("#count");
+
+let clicked = false;
+
+
+likeBtn.addEventListener("click", () => {
+  if (!clicked) {
+    clicked = true;
+    likeIcon.innerHTML = `<i class="fa-solid fa-heart"></i>`;
+    // count.textContent++;
+  } else {
+    clicked = false;
+    likeIcon.innerHTML = `<i class="fa-regular fa-heart"></i>`;
+    // count.textContent--;
+  }
+});
+

@@ -28,13 +28,15 @@
     <main>
         <hr>
         <div class="wrapper" id="wrapper">
+            <div class="like">
+                <button class="like__btn" onclick="like(this)" value="Like this song">
+                    <span id="icon"><i class="fa-regular fa-heart"></i></span>
+                    <!-- <span id="count">0</span> Like -->
+                 </button>
+            </div>
             <div class="coverArt">
                 <img src="images/covers/Asia_Asia.webp" alt="Album Artwork" id="albumCover">
             </div>
-
-            <!-- <div class="progress-container" id="progress-container">
-                <div class="progress" id="progress"></div>
-            </div> -->
 
             <audio src="audio/Asia_Asia_HeatOfTheMoment.mp3" id="audio"></audio>
 
